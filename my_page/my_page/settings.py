@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'horoscopes',
 ]
 
 MIDDLEWARE = [
@@ -52,6 +53,8 @@ MIDDLEWARE = [
 ROOT_URLCONF = 'my_page.urls'
 
 TEMPLATES = [
+    # Dirs- список, указывать путь, где искать шаблоны. Пути абсолютные полный
+    # путь до папки шаблонов. BASE_DIR/'horoscope'/'templates'
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [],
